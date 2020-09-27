@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include  ("./partials/head.html") %>
+    <link href="/css/Contacto.css" rel="stylesheet">
+    <title><%= title%></title>
+</head>
+<%- include  ("./partials/body.html") %>
+<body>
+  
+    <%- include ("./partials/navigationAllPage.html") %>
+ 
+    <header class="masthead"> 
+        <section class="testimonials text-center masthead text-black ">
+              <div class="container" id="#contacto">
+                  <div class="row">
+                      <div class="col-md-8 mx-auto wow fadeInUp">
+                        <h3 class="text-center font-weight-bold"><span class="bg-main">QUEREMOS</span> ORAR CON VOS</h3>
+                          <p class=" text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                      </div>
+                  </div>
+            </div>
+        </section>
+  </header>
+
+  <section class="testimonials bg-light" id="reuniones">
+    <div class="container ">
+        <div class="row" style=" display: flex; align-items: center; Justify-content: center;">
+          <div class="col-sm-6 col-md-4 col-lg-6 mt-4 align-self-center">
+            <div class="my-right-text wow   fadeInUp">
+                <form action="sendForm"  method="post" class="bg-light contact-form">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name= "nombre" placeholder= "Nombre y Apellido">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="mail" placeholder="Mail">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="telefono" placeholder="Telefono">
+                    </div>
+                    <div class="form-group">
+                      <textarea name="" id="" cols="30" rows="7" name ="mensaje" class="form-control" placeholder="Motivo de Oración"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <input type="submit" value="Enviar" class="btn btn-primary py-3 px-5">
+                    </div>
+                  </form>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+    <%- include ("./partials/piedePagina.html") %>
+    <%- include ("./partials/footer.html") %>
+</body>
+</html>
